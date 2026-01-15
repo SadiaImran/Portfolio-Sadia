@@ -74,7 +74,7 @@ export const projects = [
     title: "PodVerse",
     tech: ["React.js", "FastAPI", "LiveKit", "Supabase", "AI/ML", "LLM", "FFMPEG"],
     period: "Dec 2024 – Present",
-    image: "/assets/podverse-demo.png",
+    image: import.meta.env.BASE_URL + "assets/podverse-demo.png",
     description: [
       "Architecting AI-powered podcast platform automating content creation through script generation, voice cloning, and RAG-based guest hosting",
       "Built scalable FastAPI backend with Supabase integration handling concurrent users, implementing real-time audio processing, faceless video generation, and automated subtitle creation",
@@ -86,7 +86,7 @@ export const projects = [
     title: "JobPilot",
     tech: ["FastAPI", "Supabase", "React.js", "TailwindCSS", "LLM"],
     period: "2025",
-    image: "/assets/jobpilot.png",
+    image: import.meta.env.BASE_URL + "assets/jobpilot.png",
     description: [
       "Developed full-stack job application tracker with FastAPI backend and React frontend.",
       "Integrated LLM-powered resume analysis providing intelligent job matching and content suggestions.",
@@ -98,7 +98,7 @@ export const projects = [
     title: "Real Time Weather",
     tech: ["FLutter" , "OpenWeatherMap API"],
     period: "2025",
-    image: "/assets/weather.png",
+    image: import.meta.env.BASE_URL + "assets/weather.png",
     description: [
       "Cross-platform real-time weather application built with Flutter. It provides weather updates for any location entered by the user.",
       "The app fetches live weather data details such as temperature, humidity, wind speed, precipitation, and UV index."
@@ -109,7 +109,7 @@ export const projects = [
     title: "Predictive Analytics for Housing Prices",
     tech: ["Python", "Scikit-learn", "Flask"],
     period: "2025",
-    image: "/assets/home-price.png",
+    image: import.meta.env.BASE_URL + "assets/home-price.png",
     description: [
       "Developed ML regression model housing price prediction pipeline to predict housing prices based on input features.",
       "Created Flask API for real-time predictions through web interface",
@@ -121,7 +121,7 @@ export const projects = [
     title: "Celebrity Face Classifier",
     tech: ["Python", "OpenCV", "Flask", "ML"],
     period: "2025",
-    image: "/assets/celebrity.png",
+    image: import.meta.env.BASE_URL + "assets/celebrity.png",
     description: [
       "Built ML-based multi-face detection system with 88% classification accuracy to detect and classify multiple celebrities in an uploaded image.",
       "Implemented Flask backend for image processing and real-time inference with optimized model serving"
@@ -132,7 +132,7 @@ export const projects = [
     title: "Travel Planner App",
     tech: ["Flutter", "Firebase"],
     period: "2025",
-    image: "/assets/travel-app.png",
+    image: import.meta.env.BASE_URL + "assets/travel-app.png",
     description: [
       "Developed cross-platform mobile app with Firebase backend for real-time trip planning and booking",
       "Developed a Flutter app that helps users explore destinations, book stays, plan trips",
