@@ -34,9 +34,10 @@ export default function Hero() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a 
-              href="../assets/resume.pdf"
+              href={import.meta.env.BASE_URL + 'assets/resume.pdf'}
               target="_blank"
-              download="Resume_SadiaImran"
+              rel="noopener noreferrer"
+              download="Resume_SadiaImran.pdf"
               className="px-8 py-3 border border-slate-200 hover:border-violet-500 text-slate-600 hover:text-violet-500 rounded-full font-medium transition-all flex items-center gap-2"
             >
               Download CV

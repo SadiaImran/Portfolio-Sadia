@@ -25,7 +25,7 @@ export const personalInfo = {
     },
     {
       name: "Resume",
-      url: "/assets/resume.pdf",
+      url: import.meta.env.BASE_URL + "assets/resume.pdf",
       icon: FileText
     }
   ]
