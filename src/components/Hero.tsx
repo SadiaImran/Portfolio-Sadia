@@ -34,10 +34,9 @@ export default function Hero() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a 
-              href={personalInfo.social.find(s => s.name === 'Resume')?.url || '#'}
+              href="../assets/resume.pdf"
               target="_blank"
-              rel="noopener noreferrer"
-              download
+              download="Resume_SadiaImran"
               className="px-8 py-3 border border-slate-200 hover:border-violet-500 text-slate-600 hover:text-violet-500 rounded-full font-medium transition-all flex items-center gap-2"
             >
               Download CV
