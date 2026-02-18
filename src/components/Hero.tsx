@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/resume';
 import { ArrowRight, Download } from 'lucide-react';
-import profileImg from '../assets/image-profile-black.png';
+import profileImg from '../assets/pic.jpg';
 
 export default function Hero() {
   return (
@@ -68,7 +68,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="order-1 md:order-2 flex justify-center"
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full">
             <img
               src={profileImg}
               alt={`${personalInfo.name} profile`}
