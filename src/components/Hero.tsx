@@ -62,7 +62,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Decorative Shape (Replaces Image) */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -75,7 +75,7 @@ export default function Hero() {
               className="w-full h-full rounded-full object-cover shadow-2xl"
             />
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
