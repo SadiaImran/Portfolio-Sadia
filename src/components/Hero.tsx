@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/resume';
 import { ArrowRight, Download } from 'lucide-react';
-import profileImg from '../assets/pic.jpg';
+import profileImg from '../assets/pic.jpeg';
 
 export default function Hero() {
   return (
