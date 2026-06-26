@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/resume';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -32,16 +32,7 @@ export default function Hero() {
               Contact Me
               <ArrowRight className="w-4 h-4" />
             </a>
-            <a 
-              href={import.meta.env.BASE_URL + 'assets/resume.pdf'}
-              target="_blank"
-              rel="noopener noreferrer"
-              download="Resume_SadiaImran.pdf"
-              className="px-8 py-3 border border-slate-200 hover:border-violet-500 text-slate-600 hover:text-violet-500 rounded-full font-medium transition-all flex items-center gap-2"
-            >
-              Download CV
-              <Download className="w-4 h-4" />
-            </a>
+
           </div>
 
           <div className="mt-12 flex justify-center md:justify-start gap-6">

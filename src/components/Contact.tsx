@@ -1,6 +1,6 @@
 import Section from './Section';
 import { personalInfo } from '../data/resume';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Send } from 'lucide-react';
 
 export default function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -55,17 +55,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 text-slate-600">
-                <div className="w-12 h-12 bg-violet-50 rounded-full flex items-center justify-center text-violet-500">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-sm text-slate-400">Phone</p>
-                  <p className="font-medium">{personalInfo.phone}</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4 text-slate-600">
+<div className="flex items-center gap-4 text-slate-600">
                 <div className="w-12 h-12 bg-violet-50 rounded-full flex items-center justify-center text-violet-500">
                   <MapPin className="w-5 h-5" />
                 </div>

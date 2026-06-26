@@ -5,7 +5,6 @@ export const personalInfo = {
   title: "Full-Stack Software Engineer",
   location: "Islamabad, Pakistan",
   email: "sadiaimran837@gmail.com",
-  phone: "+92-315-5354758",
   summary: "Full-Stack Software Engineer with strong expertise in backend development, scalable API design, and DevOps practices. Proven track record building production systems using Python (FastAPI, Flask), Node.js, and modern databases. Experience spans cross-platform development (Qt/QML, Flutter), cloud infrastructure (AWS, Docker, Kubernetes), and AI/ML integration. Currently driving backend architecture at Stackware Ltd. with focus on system integration, and real-time applications.",
   social: [
     {
@@ -38,9 +37,9 @@ export const experience = [
     period: "Jan 2025 – Present",
     location: "Islamabad, Pakistan (Hybrid)",
     description: [
-      "Architected and developed cross-platform applications using Qt/QML, PyQt, and Flutter with focus on backend system integration.",
-      "Designed and implemented backend APIs in Python and C++.",
-      "Collaborated with cross-functional teams using Git workflow, code reviews, and spftware engineering methodologies."
+      "Architected and deployed production-ready AI-enabled workflow automation engine and cross-platform applications using Qt/QML, PyQt, Flutter and Python.",
+      "Designed and implemented backend APIs in Python and C++ for real-time data processing, device communication, and map integration, improving system performance by 40%.",
+      "Collaborated with cross-functional teams using Git workflow, code reviews, and Agile methodologies, reducing deployment time by 30%."
     ]
   },
   {
@@ -63,7 +62,7 @@ export const education = [
     period: "Jan 2022 – Jan 2026",
     location: "Islamabad, Pakistan",
     description: [
-      "CGPA: 3.78/4.0",
+      "CGPA: 3.77/4.0",
       "Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, DevOps, Machine Learning, Computer Networks, Operating Systems"
     ]
   }
@@ -95,7 +94,30 @@ export const projects = [
     links: [{ name: "GitHub", url: "https://github.com/SadiaImran/JobPilot" }]
   },
   {
-    title: "Real Time Weather",
+    title: "AI Workflow Automation Screening Engine",
+    tech: ["Python", "React.js", "NLP", "BeautifulSoup", "SMTP"],
+    period: "2025",
+    image: import.meta.env.BASE_URL + "assets/jobpilot.png",
+    description: [
+      "Built intelligent document understanding platform extracting structured JSON data from unstructured multi-source files using NLP techniques and PDF parsing.",
+      "Engineered multi-criteria filtering pipeline with 90% accuracy for automated candidate classification by location, skills, and experience level.",
+      "Developed production dashboard with intelligent ranking algorithm and interview slot automation, reducing manual screening time by 70%."
+    ],
+    links: []
+  },
+  {
+    title: "Drivio - Car Rental Platform",
+    tech: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    period: "2024",
+    image: import.meta.env.BASE_URL + "assets/home-price.png",
+    description: [
+      "Built RESTful API backend handling 50+ endpoints with JWT authentication and role-based access control.",
+      "Designed MongoDB schemas optimizing query performance by 40% for vehicle inventory management.",
+      "Implemented real-time booking system with conflict resolution and automated email notifications."
+    ],
+    links: [{ name: "GitHub", url: "https://github.com/SadiaImran" }]
+  },
+  
     tech: ["FLutter" , "OpenWeatherMap API"],
     period: "2025",
     image: import.meta.env.BASE_URL + "assets/weather.png",
