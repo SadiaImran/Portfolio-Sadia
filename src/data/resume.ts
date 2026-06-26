@@ -117,8 +117,9 @@ export const projects = [
     ],
     links: [{ name: "GitHub", url: "https://github.com/SadiaImran" }]
   },
-  
-    tech: ["FLutter" , "OpenWeatherMap API"],
+  {
+    title: "Real Time Weather",
+    tech: ["Flutter", "OpenWeatherMap API"],
     period: "2025",
     image: import.meta.env.BASE_URL + "assets/weather.png",
     description: [
