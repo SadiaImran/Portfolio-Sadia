@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 const BASE = import.meta.env.BASE_URL;
 
-const roles = ["AI-powered backends", "RAG pipelines", "real-time voice systems", "production APIs", "intelligent automation"];
+const roles = ["polyglot systems", "AI-integrated backends", "real-time data pipelines", "cross-platform experiences", "intelligent automation", "full-stack AI products"];
 
 function Typewriter() {
   const [text, setText] = useState("");
@@ -147,7 +147,7 @@ export default function App() {
             I build <Typewriter />
           </p>
           <p style={{ fontSize: 14, lineHeight: 1.8, color: "#4A4A68", marginBottom: "2rem", maxWidth: 480 }}>
-            Full-Stack Software Engineer with deep expertise in <strong style={{ color: "#7C6FD4" }}>AI/ML integration</strong>, backend architecture, and real-time systems — building things that are fast, intelligent, and production-ready.
+            Full-Stack Engineer fluent across <strong style={{ color: "#7C6FD4" }}>Python, JavaScript, C++, Dart</strong> and beyond — bridging AI/ML, backend systems, cloud infrastructure, and cross-platform development into cohesive, production-ready products.
           </p>
           <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" as const }}>
             <a href="#projects" style={{ background: "#7C6FD4", color: "#fff", border: "none", padding: "11px 26px", borderRadius: 100, fontSize: 13, fontWeight: 600, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, transition: "all 0.22s" }}
