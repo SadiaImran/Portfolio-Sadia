@@ -122,7 +122,7 @@ export default function App() {
       <nav style={S.nav}>
         <span style={S.navLogo}>Sadia Imran</span>
         <div style={{ display: "flex", gap: "2rem", listStyle: "none" }}>
-          {["skills","experience","projects","contact"].map(s => (
+          {["skills","experience","education","projects","contact"].map(s => (
             <a key={s} href={`#${s}`} style={S.navLink}
               onMouseEnter={e => (e.currentTarget.style.color = "#7C6FD4")}
               onMouseLeave={e => (e.currentTarget.style.color = "#4A4A68")}>
@@ -147,7 +147,7 @@ export default function App() {
             I build <Typewriter />
           </p>
           <p style={{ fontSize: 14, lineHeight: 1.8, color: "#4A4A68", marginBottom: "2rem", maxWidth: 480 }}>
-            Full-Stack Software Engineer with deep expertise in <strong style={{ color: "#7C6FD4" }}>AI/ML integration</strong>, backend architecture, and real-time systems. Currently shipping production AI at <strong style={{ color: "#7C6FD4" }}>Stackware Ltd.</strong> with Python, FastAPI, LangChain, and LiveKit.
+            Full-Stack Software Engineer with deep expertise in <strong style={{ color: "#7C6FD4" }}>AI/ML integration</strong>, backend architecture, and real-time systems — building things that are fast, intelligent, and production-ready.
           </p>
           <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" as const }}>
             <a href="#projects" style={{ background: "#7C6FD4", color: "#fff", border: "none", padding: "11px 26px", borderRadius: 100, fontSize: 13, fontWeight: 600, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, transition: "all 0.22s" }}
@@ -169,14 +169,7 @@ export default function App() {
               <svg width="146" height="146" viewBox="0 0 146 146" fill="none"><circle cx="73" cy="73" r="73" fill="#EEECFb"/><ellipse cx="73" cy="58" rx="26" ry="28" fill="#C5BFF5"/><ellipse cx="73" cy="58" rx="20" ry="22" fill="#A99EE8"/><circle cx="65" cy="54" r="3" fill="#fff" opacity="0.6"/><ellipse cx="73" cy="110" rx="38" ry="26" fill="#C5BFF5"/><ellipse cx="73" cy="105" rx="30" ry="20" fill="#A99EE8"/><circle cx="40" cy="68" r="8" fill="#C5BFF5"/><circle cx="106" cy="68" r="8" fill="#C5BFF5"/><rect x="58" y="130" width="30" height="6" rx="3" fill="#7C6FD4" opacity="0.3"/><path d="M82 78 Q73 86 64 78" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.5"/></svg>
             </div>
           </div>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
-            {[["3.77","CGPA"],["1yr+","Experience"]].map(([n,l]) => (
-              <div key={l} style={{ textAlign: "center" }}>
-                <div style={{ fontFamily: "'DM Serif Display', serif", fontSize: 22, color: "#7C6FD4", lineHeight: 1 }}>{n}</div>
-                <div style={{ fontSize: 10, color: "#7A7A9A", fontWeight: 500, letterSpacing: "0.05em", marginTop: 2 }}>{l}</div>
-              </div>
-            ))}
-          </div>
+
         </div>
       </div>
 
@@ -248,6 +241,31 @@ export default function App() {
 
       <hr style={S.divider} />
 
+      {/* EDUCATION */}
+      <div style={{ ...S.section }} id="education">
+        <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "1.8rem" }}>
+          <span style={S.sectionLabel}>Background</span>
+          <h2 style={S.h2}>Education</h2>
+        </div>
+        <div style={{ background: "#fff", border: "1.5px solid #D8D2F8", borderRadius: 18, padding: "1.6rem 1.8rem", display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" as const, gap: "1rem" }}>
+          <div>
+            <div style={{ fontSize: 15, fontWeight: 600, color: "#1A1A2E", marginBottom: "0.25rem" }}>Bachelor of Science in Computer Science</div>
+            <div style={{ fontSize: 13, color: "#7C6FD4", fontWeight: 500, marginBottom: "0.75rem" }}>COMSATS University Islamabad</div>
+            <div style={{ display: "flex", flexWrap: "wrap" as const, gap: "0.4rem" }}>
+              {["Data Structures & Algorithms","OOP","Database Management","Machine Learning","DevOps","Computer Networks","Web Development","Operating Systems"].map(c => (
+                <span key={c} style={{ background: "#F5F3FF", color: "#4A4A68", border: "1px solid #D8D2F8", padding: "4px 11px", borderRadius: 100, fontSize: 11 }}>{c}</span>
+              ))}
+            </div>
+          </div>
+          <div style={{ textAlign: "right" as const, flexShrink: 0 }}>
+            <div style={{ fontSize: 12, color: "#7C6FD4", fontWeight: 600, background: "#EEECFb", padding: "3px 10px", borderRadius: 100, marginBottom: "0.4rem", display: "inline-block" }}>Jan 2022 – Jan 2026</div>
+            <div style={{ fontSize: 13, color: "#7A7A9A", fontWeight: 500 }}>CGPA: 3.77 / 4.0</div>
+          </div>
+        </div>
+      </div>
+
+      <hr style={S.divider} />
+
       {/* PROJECTS */}
       <div ref={projRef} style={{ ...S.section, ...S.fadeIn }} id="projects">
         <div style={{ display: "flex", alignItems: "baseline", gap: "1rem", marginBottom: "1.8rem" }}>
@@ -273,7 +291,7 @@ export default function App() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "0.8rem" }}>
           {[
             { href: "mailto:sadiaimran837@gmail.com", icon: "✉", label: "Email", value: "sadiaimran837@gmail.com" },
-            { href: "https://linkedin.com/in/sadia-imran", icon: "in", label: "LinkedIn", value: "linkedin.com/in/sadia-imran" },
+            { href: "https://www.linkedin.com/in/sadia-imran-3b627227b", icon: "in", label: "LinkedIn", value: "linkedin.com/in/sadia-imran" },
             { href: "https://github.com/SadiaImran", icon: "gh", label: "GitHub", value: "github.com/SadiaImran" },
           ].map(c => (
             <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" style={S.contactCard}
