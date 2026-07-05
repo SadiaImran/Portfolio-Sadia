@@ -117,10 +117,9 @@ Error generating stack: `+i.message+`
           .nav-links { display:none; }
           .nav-burger { display:flex; align-items:center; justify-content:center; }
 
-          .hero { grid-template-columns:1fr; padding:2.5rem 1.2rem 2rem; gap:1.5rem; }
+          .hero { grid-template-columns:1fr; padding:2.5rem 1.2rem 2rem; gap:0; }
           .hero-name { font-size:48px; letter-spacing:2px; }
-          .avatar-wrap { order:-1; }
-          .avatar-ring-wrap { width:120px; height:120px; }
+          .avatar-wrap { display:none; }
 
           .skills-grid { grid-template-columns:1fr; }
 
