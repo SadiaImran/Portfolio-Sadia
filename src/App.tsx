@@ -8,22 +8,26 @@ function Typewriter() {
   const [text, setText] = useState("");
   const [roleIdx, setRoleIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
-  const charIdx = useRef(0);
+
   useEffect(() => {
     const current = roles[roleIdx];
     const timeout = setTimeout(() => {
       if (!deleting) {
-        setText(current.slice(0, charIdx.current + 1));
-        charIdx.current++;
-        if (charIdx.current === current.length) setTimeout(() => setDeleting(true), 1800);
+        const next = current.slice(0, text.length + 1);
+        setText(next);
+        if (next === current) setTimeout(() => setDeleting(true), 1800);
       } else {
-        setText(current.slice(0, charIdx.current - 1));
-        charIdx.current--;
-        if (charIdx.current === 0) { setDeleting(false); setRoleIdx((i) => (i + 1) % roles.length); }
+        const next = current.slice(0, text.length - 1);
+        setText(next);
+        if (next === "") {
+          setDeleting(false);
+          setRoleIdx((i) => (i + 1) % roles.length);
+        }
       }
     }, deleting ? 38 : 68);
     return () => clearTimeout(timeout);
   }, [text, deleting, roleIdx]);
+
   return <span className="tw">{text}</span>;
 }
 
