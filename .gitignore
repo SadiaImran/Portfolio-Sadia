@@ -1,0 +1,14 @@
+# Local test & scratch scripts
+scratch/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.bak
+
